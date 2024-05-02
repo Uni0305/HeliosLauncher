@@ -123,7 +123,6 @@ checkForUpdates = "업데이트 확인!"
 whatsNew = "새로운 기능"
 updateReleaseNotes = "업데이트 릴리스 노트"
 
-
 [ejs.waiting]
 waitingText = "마이크로소프트 계정 연결 대기 중..."
 
@@ -211,11 +210,10 @@ checkConsoleForDetails = "자세한 내용은 콘솔 (CTRL + Shift + i)을 참�
 [js.landing.news]
 checking = "뉴스 확인 중"
 
-# IDK how to translate this xD
 [js.landing.discord]
-loading = "Loading game.."
-joining = "Sailing to Westeros!"
-joined = "Exploring the Realm!"
+loading = "게임 로딩 중.."
+joining = "서버에 참가 중.."
+joined = "세계를 탐험 중!"
 
 [js.overlay]
 dismiss = "해제"
@@ -281,6 +279,11 @@ latestVersionTitle = "최신 버전 사용 중"
 checkForUpdatesButton = "업데이트 확인"
 checkingForUpdatesButton = "업데이트 확인 중.."
 
+[js.settings.msftLogin]
+errorTitle = "Microsoft 로그인 실패"
+errorMessage = "Microsoft 계정을 인증할 수 없습니다. 다시 시도해주세요."
+okButton = "확인"
+
 [js.uibinder.startup]
 fatalErrorTitle = "치명적인 오류: 배포 인덱스 로드 실패"
 fatalErrorMessage = "서버에 연결하여 배포 인덱스를 다운로드할 수 없었습니다. 로컬에 복사본이 없어 로드할 수 없습니다. <br><br>배포 인덱스는 최신 서버 정보를 제공하는 핵심 파일입니다. 이 없이는 런처가 시작할 수 없습니다. 인터넷에 연결되어 있는지 확인하고 애플리케이션을 다시 실행하세요."
@@ -297,3 +300,45 @@ selectAnotherAccountButton = "다른 계정 선택"
 checkingForUpdateButton = "업데이트 확인 중..."
 installNowButton = "설치하기"
 checkForUpdatesButton = "업데이트 확인"
+
+[js.auth.microsoft.error]
+noProfileTitle = "로그인 중 오류:<br>프로필 설정되지 않음"
+noProfileDesc = "Microsoft 계정에 마인크래프트 프로필이 아직 설정되지 않았습니다. 최근에 게임을 구매하거나 Xbox Game Pass를 통해 게임을 받으셨다면, <a href=\"https://minecraft.net/\">Minecraft.net</a>에서 프로필을 설정해야 합니다.<br><br>게임을 아직 구매하지 않으셨다면, <a href=\"https://minecraft.net/\">Minecraft.net</a>에서 구매할 수도 있습니다."
+noXboxAccountTitle = "로그인 중 오류:<br>Xbox 계정 없음"
+noXboxAccountDesc = "Microsoft 계정에 Xbox 계정이 연결되어 있지 않습니다."
+xblBannedTitle = "로그인 중 오류:<br>Xbox Live 사용 불가"
+xblBannedDesc = "Microsoft 계정이 Xbox Live가 사용 불가능한 국가에서 발급되었거나 차단되었습니다."
+under18Title = "로그인 중 오류:<br>부모 승인 필요"
+under18Desc = "18세 미만 사용자의 계정은 성인이 가족에 추가해야 합니다."
+unknownTitle = "로그인 중 알 수 없는 오류"
+unknownDesc = "알 수 없는 오류가 발생했습니다. 자세한 내용은 콘솔을 참조하세요."
+
+[js.auth.mojang.error]
+methodNotAllowedTitle = "내부 오류:<br>허용되지 않은 메서드"
+methodNotAllowedDesc = "허용되지 않은 메서드입니다. 이 오류를 보고해 주세요."
+notFoundTitle = "내부 오류:<br>찾을 수 없음"
+notFoundDesc = "인증 엔드포인트를 찾을 수 없습니다. 이 문제를 보고해 주세요."
+accountMigratedTitle = "로그인 중 오류:<br>계정 이전됨"
+accountMigratedDesc = "이전된 계정으로 로그인을 시도했습니다. 계정 이메일을 사용하여 다시 시도해 보세요."
+invalidCredentialsTitle = "로그인 중 오류:<br>잘못된 자격 증명"
+invalidCredentialsDesc = "입력한 이메일 또는 비밀번호가 잘못되었습니다. 다시 시도해 주세요."
+tooManyAttemptsTitle = "로그인 중 오류:<br>시도 횟수 초과"
+tooManyAttemptsDesc = "이 계정으로 최근에 너무 많은 로그인 시도가 있었습니다. 나중에 다시 시도해 주세요."
+invalidTokenTitle = "로그인 중 오류:<br>잘못된 토큰"
+invalidTokenDesc = "제공된 액세스 토큰이 잘못되었습니다."
+tokenHasProfileTitle = "로그인 중 오류:<br>토큰에 프로필이 있음"
+tokenHasProfileDesc = "액세스 토큰에 이미 프로필이 할당되어 있습니다. 프로필 선택은 아직 구현되지 않았습니다."
+credentialsMissingTitle = "로그인 중 오류:<br>자격 증명 누락"
+credentialsMissingDesc = "사용자 이름/비밀번호가 제출되지 않았거나 비밀번호가 3자 미만입니다."
+invalidSaltVersionTitle = "로그인 중 오류:<br>잘못된 Salt 버전"
+invalidSaltVersionDesc = "잘못된 Salt 버전입니다."
+unsupportedMediaTypeTitle = "내부 오류:<br>지원되지 않는 미디어 유형"
+unsupportedMediaTypeDesc = "지원되지 않는 미디어 유형입니다. 이 오류를 보고해 주세요."
+accountGoneTitle = "로그인 중 오류:<br>계정 이전됨"
+accountGoneDesc = "계정이 Microsoft 계정으로 이전되었습니다. Microsoft로 로그인하세요."
+unreachableTitle = "로그인 중 오류:<br>접속 불가"
+unreachableDesc = "인증 서버에 접속할 수 없습니다. 인터넷에 연결되어 있는지 확인하세요."
+gameNotPurchasedTitle = "로그인 중 오류:<br>게임 미구매"
+gameNotPurchasedDesc = "로그인하려는 계정이 마인크래프트를 구매하지 않았습니다. <a href=\"https://minecraft.net/\">Minecraft.net</a>에서 구매할 수 있습니다."
+unknownErrorTitle = "로그인 중 알 수 없는 오류"
+unknownErrorDesc = "알 수 없는 오류가 발생했습니다. 자세한 내용은 콘솔을 참조하세요."
