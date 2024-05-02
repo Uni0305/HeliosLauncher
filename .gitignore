@@ -1,6 +1,7 @@
-/node_modules/
-/.vs/
-/.vscode/
-/target/
-/logs/
-/dist/
+node_modules/
+.vs/
+.vscode/*
+!.vscode/launch.json
+target/
+logs/
+dist/
