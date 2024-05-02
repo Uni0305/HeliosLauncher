@@ -441,7 +441,7 @@ let proc
 let hasRPC = false
 // Joined server regex
 // Change this if your server uses something different.
-const GAME_JOINED_REGEX = /\[.+\]: Sound engine started/
+const GAME_JOINED_REGEX = /\[.+\]: Connecting to (?:[0-9]{1,3}\.){3}[0-9]{1,3}, \d{1,5}/
 const GAME_LAUNCH_REGEX = /^\[.+\]: (?:MinecraftForge .+ Initialized|ModLauncher .+ starting: .+|Loading Minecraft .+ with Fabric Loader .+)$/
 const MIN_LINGER = 5000
 
@@ -557,8 +557,8 @@ async function dlAsync(login = true) {
         let pb = new ProcessBuilder(serv, versionData, modLoaderData, authUser, remote.app.getVersion())
         setLaunchDetails(Lang.queryJS('landing.dlAsync.launchingGame'))
 
-        // const SERVER_JOINED_REGEX = /\[.+\]: \[CHAT\] [a-zA-Z0-9_]{1,16} joined the game/
-        const SERVER_JOINED_REGEX = new RegExp(`\\[.+\\]: \\[CHAT\\] ${authUser.displayName} joined the game`)
+        // const SERVER_JOINED_REGEX = /\[.+\]: \[System\] \[CHAT\] [a-zA-Z0-9_]{1,16} joined the game/
+        const SERVER_JOINED_REGEX = /\[.+\]: Connected to a (vanilla|modded) server.[\s\S]*/
 
         const onLoadComplete = () => {
             toggleLaunchArea(false)
